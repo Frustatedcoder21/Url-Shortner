@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+    <div class="bg-gray-800 rounded-lg shadow-lg p-10 w-full max-w-md">
+        <h1 class="text-3xl font-bold mb-6 text-center">URL Shortener</h1>
+        <form action="/generate" method="POST">
+            <div class="mb-4">
+                <label for="url" class="block text-sm font-medium">Enter your URL:</label>
+                <input type="text" name="url" id="url" required
+                       class="mt-1 block w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       placeholder="https://example.com">
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg transition duration-200">
+                Shorten URL
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
